@@ -1,4 +1,4 @@
-package recursion;
+package DAY1.recursion;
 /* 
 number = 3421 
 

@@ -1,4 +1,4 @@
-package recursion;
+package DAY1.recursion;
 
 public class firstprogram {
     public static void main(String[] args) {
