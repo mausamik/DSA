@@ -1,4 +1,4 @@
-package sorting;
+package sorting.leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
