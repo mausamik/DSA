@@ -6,4 +6,7 @@ This is a practice DSA, some notes of mine and codes I will be doing
 2. Recursion basics 
 
 # DAY 2 - 09/02/22
-1. Linked List
+1. Sorting algorithms  [revison]
+  - Bubble sort 
+  - Selection sort 
+  - Insertion sort
