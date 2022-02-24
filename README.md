@@ -19,5 +19,6 @@ This is a practice DSA, some notes of mine and codes I will be doing
 # DAY 4 
   -  Circular Queue 
   -  Linkedlist (from scratch)
+  -  Binary Tree (Traversal - Inorder, Preorder, Postorder)
 
 # DAY 5 
