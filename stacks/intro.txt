@@ -1,0 +1,30 @@
+STACK 
+
+- inbuilt class in Java 
+
+- Linear Data Structure 
+- LIFO --> Last In First Out 
+
+- Insertion , Deletion from the top 
+
+4 major operations 
+
+1. push(ele) -- insert into stack 
+2. pop()  -- delete the top element 
+3. isEmpty() -- return true if stack is isEmpty
+4. peek() -- returns the top of stack 
+
+
+time complexity -- O(1)  for all operations
+
+Applications :
+    Recursion 
+    Parsing 
+    Browsers 
+    Editors 
+
+
+Disadvantages :
+     whatever operations are done are limited to the top of stack 
+
+

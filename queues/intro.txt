@@ -1,0 +1,33 @@
+QUEUES  
+
+-collection Framework of java 
+-Interface 
+
+- Linear Data Structure
+- FIFO --> First In First OUT 
+
+
+ Insertion (rear / begin  end ) --> |   |    |     |     |    |    |   <-- Deletion  (front / end end)
+
+ 4 major operations 
+  --> 2 pointers  -- front & rear 
+     1. enqueue(ele) -- insert element at the top (rear++)
+     2. dequeue() -- removes the top element 
+     3. peekfirst() -- gets the 1st element 
+     4. peeklast() -- gets the last element 
+     5. isEmpty() -- rear == 0   -- insert elements then / cannot delete elements 
+     5. isFull() -- rear == size of queue -- cannot add more ele 
+
+
+Time complexity : O(1) -- for all operations 
+
+Applications:
+     CPU / Disk Scheduling - Round robin , FIFO , Multiqueue 
+     Maintaining Playlist 
+     Interrupt Handling 
+
+
+Disadvantages 
+     Insertion / Deletion only from rear/ front end 
+     Not much flexible 
+

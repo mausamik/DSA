@@ -1,0 +1,40 @@
+LINKED LIST 
+
+    - Singlular 
+    - Double 
+    - Circular 
+
+- Linear Data Structure 
+- access ele in linear fashion  only 
+- store similar elements(int , double , float ...)
+- Dynamic in size 
+- Starting element or node --> head 
+- Easy Insertion & Deletion (anywhere)
+
+Implementation :
+    Insert at beginning 
+    Insert at the end 
+
+    Delete 
+
+    Display 
+
+    Other methods 
+
+Applications:
+    Suitable for Dyanamic memory applications 
+    Frequent Insertion / Deletion 
+
+Disadvantages:
+    if head node lost, linked list holds no importance 
+    No random access , as the nodes has address of other nodes 
+
+
+Time complexity :
+     Insert --> O(1)
+     Search --> O(n) 
+
+
+Remaining topics :
+    Double 
+    Circular

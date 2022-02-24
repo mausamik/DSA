@@ -1,0 +1,19 @@
+BINARY TREEE 
+
+    - Heirarchial Data Structure 
+    - Every node --> atmost 2 children 
+    - Cant access elements randomly using index 
+
+
+Common traversal methods 
+     preorder(root)  --> root - left - right 
+     postorder(root) --> left - right - root 
+     inorder(root) -->   left - root - right 
+
+
+Applications :
+
+    file system Heirarchy 
+    Variations of binary tree has various applications 
+
+    
