@@ -251,6 +251,23 @@ INSERT AT ANY POSITION IN THE LIST
 
     }
 
+// count the number of nodes present -- LINKED LIST SIZE 
+
+        public int getcount()
+        {
+            Node temp = head ;
+            int count = 0 ;
+            
+            while(temp != null)
+            {
+                count++;
+                temp = temp.next;
+            
+            }
+            return count;
+        }
+
+
 
     public static void main(String[] args) {
         // linkedlist's object 
@@ -281,5 +298,7 @@ INSERT AT ANY POSITION IN THE LIST
 
         obj.deleteposition(1);
         obj.print();
+
+       System.out.println("Size of linkedlist is : " + obj.getcount());
      }
 }

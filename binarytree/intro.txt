@@ -16,4 +16,9 @@ Applications :
     file system Heirarchy 
     Variations of binary tree has various applications 
 
-    
+Advantages 
+     insertion & search are most efficient 
+
+Disadvantages 
+     sorting is difficult 
+     

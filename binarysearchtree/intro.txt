@@ -1,0 +1,5 @@
+BINARY SEARCH TREE 
+
+     - Left child < root 
+     - Right child > root 
+
