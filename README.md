@@ -6,7 +6,7 @@ This is a practice DSA, some notes of mine and codes I will be doing
 2. Recursion basics 
 
 # DAY 2 
-Sorting algorithms  [revison]
+Sorting algorithms  
   - Bubble sort 
   - Selection sort 
   - Insertion sort
@@ -22,5 +22,10 @@ Sorting algorithms  [revison]
   -  Binary Tree (Traversal - Inorder, Preorder, Postorder)
 
 # DAY 5 
-  - Binary Search Tree (basics) 
-  - 
+  - Linked list (Single) - Revise 
+  - Length of Linkedlist 
+  - Reverse a Linkedlist 
+  
+
+
+  

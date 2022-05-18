@@ -1,5 +1,5 @@
 package linkedlist;
-// this is not using Linkedlist class 
+// this is not using Linked list class 
 
 
 
@@ -18,7 +18,7 @@ package linkedlist;
 
 
 
-public class operations2 {
+public class singlelinkedlist {
 
     Node head;
     // create node class 
@@ -33,7 +33,9 @@ public class operations2 {
         }
     }
 
-    // Insert  at the beginning 
+    // ---------------------------------------- INSERT --------------------------------
+
+    // Insert at the BEGINNING 
 
     /*
          (head) 2  --> 3 --> 4  --> N 
@@ -47,7 +49,7 @@ public class operations2 {
         // create a new ndode 
         Node newnode = new Node(data);
         
-        // check if linkedlist exits 
+        // check if linkedlist exits - linked list does not exist 
         if (head == null){
             head = newnode;
             return ;
@@ -135,8 +137,10 @@ INSERT AT ANY POSITION IN THE LIST
 
     }
 
+    
+    
 
-    // print the list 
+    // ------------------------------------- PRINT THE LIST --------------------------------------------
     public void print()
     { 
         // if head == NULL 
@@ -157,7 +161,7 @@ INSERT AT ANY POSITION IN THE LIST
   
     }
 
-    /* 
+    /*  ----------------------------------------------- DELETE ----------------------------------------
          DELETE --> Delete from the beginninng 
 
          steps :
@@ -251,7 +255,7 @@ INSERT AT ANY POSITION IN THE LIST
 
     }
 
-// count the number of nodes present -- LINKED LIST SIZE 
+//-----------------------------  LINKED LIST SIZE (COUNT OF NODES IN LIST ) -------------------------
 
         public int getcount()
         {
@@ -268,10 +272,33 @@ INSERT AT ANY POSITION IN THE LIST
         }
 
 
+    // ------------------------------------ REVERSE LINKEDLIST  RECURSIVE -------------------------------------
+        public Node reverseRecursive(Node head)
+        {
+            if(head == null || head.next == null)
+            {
+            return head ;
+            }
+
+
+            // assume we get reverse linkedlist 
+            Node newhead = reverseRecursive(head.next);
+            head.next.next = head ;
+            head.next = null ;
+            return newhead;
+        } 
+
+        
+
+
+
+
+
+
 
     public static void main(String[] args) {
         // linkedlist's object 
-        operations2 obj = new operations2();
+        singlelinkedlist obj = new singlelinkedlist();
         obj.addfirst(2);
         obj.addfirst(4);
         obj.print();
