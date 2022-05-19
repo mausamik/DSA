@@ -60,7 +60,7 @@ class TreeTraversal{
 
 
 
-public class operations {
+public class traversal {
     public static void main(String[] args) {
         // create obj of tree traversal 
         TreeTraversal t = new TreeTraversal();
