@@ -7,7 +7,7 @@ QUEUES
 - FIFO --> First In First OUT 
 
 
- Insertion (rear / begin  end ) --> |   |    |     |     |    |    |   <-- Deletion  (front / end end)
+ Insertion (rear  ) --> |   |    |     |     |    |    |   <-- Deletion  (front )
 
  4 major operations 
   --> 2 pointers  -- front & rear 

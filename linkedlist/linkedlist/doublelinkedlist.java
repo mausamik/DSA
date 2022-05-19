@@ -127,9 +127,11 @@ public class doublelinkedlist {
         dll.insertend(8);
         dll.display();
         System.out.println();
+
         dll.deletestart();
         dll.display();
         System.out.println();
+        
         dll.deleteend();
         dll.display();
         
