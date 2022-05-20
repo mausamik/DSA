@@ -1,5 +1,12 @@
 package binarytree;
 
+/*
+--> BUILD TREE 
+--> COUNT OF NODES 
+--> SUM OF NODES 
+--> HEIGHT OF NODES 
+
+*/
 
 public class buildtree {
 
@@ -40,6 +47,48 @@ static class Bintree{
 }
 
 
+    public  static int countofNodes(Node root)
+    {
+
+        //base case 
+        if(root == null)
+            return 0; 
+
+        int left = countofNodes(root.left);
+        int right = countofNodes(root.right);
+
+        return left+ right+ 1 ;
+
+    }
+
+    public static int sumofNodes(Node root)
+    {
+        //base case 
+        if(root == null)
+            return 0 ;
+        
+        int leftsum = sumofNodes(root.left);
+        int rightsum = sumofNodes(root.right);
+
+        return leftsum + rightsum + root.data;
+    }
+
+    public static int heightofNodes(Node root)
+    {
+        // base case 
+        if(root == null)
+        {
+            return 0;
+        }
+
+        int leftheight = heightofNodes(root.left);
+        int rightheight = heightofNodes(root.right);
+
+        int finalheight = Math.max(leftheight, rightheight) + 1 ;
+        return finalheight;
+    }
+
+
     public static void main(String[] args)
     {
         // a sequence is given preorder --> create a tree according to the sequence 
@@ -47,8 +96,13 @@ static class Bintree{
         // -1 stands for NULL 
         Bintree bt = new Bintree();
         Node root = bt.buildbintree(arr);
-        System.out.println(root.data);
-// this only prints the root 
+        System.out.println(root.data); // this only prints the root 
+
+        System.out.println(countofNodes(root));
+
+        System.out.println(sumofNodes(root));
+
+        System.out.println(heightofNodes(root));
 
 
     }

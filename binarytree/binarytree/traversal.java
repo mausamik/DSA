@@ -67,6 +67,12 @@ class TreeTraversal{
         Queue<Node> q = new LinkedList<>();
         q.add(n); // root node add 
         q.add(null); 
+        
+        // if my root is null 
+        if( n == null)
+            return; // there's nothing to return 
+            
+    
 
         // loop until when -? until queue is empty 
         while(!q.isEmpty())

@@ -1,6 +1,11 @@
 package queues;
 
 // implement Queue using Arrays 
+/*
+--> enqueue
+--> dequeue 
+
+*/
 
 class QueueUsingArrays{
     int front,  rear ;
