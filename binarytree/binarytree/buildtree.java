@@ -48,6 +48,7 @@ static class Bintree{
         Bintree bt = new Bintree();
         Node root = bt.buildbintree(arr);
         System.out.println(root.data);
+// this only prints the root 
 
 
     }

@@ -1,5 +1,8 @@
 package binarytree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 class Node{
     char key ;
     // left child , right child 
@@ -56,6 +59,46 @@ class TreeTraversal{
 
         }
     }
+
+
+    void levelorder(Node n)
+    {
+        // create a queue using Linkedlist 
+        Queue<Node> q = new LinkedList<>();
+        q.add(n); // root node add 
+        q.add(null); 
+
+        // loop until when -? until queue is empty 
+        while(!q.isEmpty())
+        {
+            Node currnode = q.remove();
+            if(currnode == null)
+            {
+                System.out.println(); // print null(nextline)
+                if(q.isEmpty())  // if all next nodes are null 
+                    break; 
+                else 
+                    q.add(null); // add null again 
+
+
+            } 
+            else {
+                System.out.print(currnode.key + " "); // print out the latest key 
+
+                if(currnode.left !=null) // check for left subtree  & add them to q
+                {
+                    q.add(currnode.left);
+                }
+                if(currnode.right != null) // check for right subtree & add them to q 
+                {
+                    q.add(currnode.right);
+                }
+
+            }
+            
+        }
+        
+    }
 }
 
 
@@ -75,11 +118,23 @@ public class traversal {
         t.root.right = new Node('C');
         t.root.right.left = new Node('F');
 
+        System.out.println("preorder: ");
         t.preorder(t.root);
+        
         System.out.println();
+
+        System.out.println("postorder: ");
         t.postorder(t.root);
+
         System.out.println();
+
+        System.out.println("inorder: ");
         t.inorder(t.root);
+
+        System.out.println();
+
+        System.out.println("the level order for this is : ");
+        t.levelorder(t.root);
         
 
     }
